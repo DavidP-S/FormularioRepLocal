@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Agregar Usuario</a></li>
+          <li><a href="visualizar.html" class="activa">Visualizar Usuario</a></li>
+        </ul>
+    </nav>  
+  <div class="Form">
+    <div class="tabs">
+      <button class="tablink" onclick="openTab(event, 'doctor')" >Doctor</button>
+      <button class="tablink" onclick="openTab(event, 'paciente')" >Paciente</button>
+    </div>
+    <br>
+    <div id="paciente" class="tab">
+      <table id="pacienteTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Datos agregados por script -->
+        </tbody>
+      </table>
+    </div>
+    
+    <div id="doctor" class="tab">
+      <table id="doctorTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Datos agregados por script -->
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

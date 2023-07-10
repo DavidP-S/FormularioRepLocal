@@ -1,0 +1,10 @@
+{
+  "formType": "paciente",
+  "nombre": "Paciente",
+  "apellido": "Once",
+  "cedula": "9876543210",
+  "correo": "correo1@gmail.com",
+  "especialidad": "Radiología",
+  "telefono": "12345678",
+  "edad": "11"
+}

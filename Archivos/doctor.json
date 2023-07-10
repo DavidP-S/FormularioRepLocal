@@ -1,0 +1,9 @@
+{
+  "formType": "doctor",
+  "nombre": "Doctor",
+  "apellido": "Diez",
+  "cedula": "0123456789",
+  "correo": "correo10@gmail.com",
+  "especialidad": "Medicina general",
+  "consultorio": "10"
+}

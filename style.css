@@ -1,0 +1,83 @@
+
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ece8e8;
+}
+
+body{
+  display:grid;
+  place-content: safe center;
+  height: 100vh;
+  background: linear-gradient(0deg, #1f213b 6%,#0c0d0e 95%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ece8e8;
+}
+.Form{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 1.1em;
+  border-radius: 1em;
+  background-color: #161718;
+}
+
+.tabs{
+  place-items: center;
+  position: center;
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.25rem;
+  width: 100%;
+
+}
+.tabs .tablink {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.tablink{
+  font-weight: bold;
+  font-size: 0.9em;
+  align-items: center;
+  justify-content: center;
+  color: rgb(128, 125, 125);  
+}
+button{
+  
+  cursor: pointer;
+  transition: 0.5s all ease;
+  padding: 0.5em;
+}
+
+button:hover, button:focus {
+  color: black ;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+table{
+  table-layout: fixed;
+  width: auto;
+}
+
+th, td {
+  width: 25%;
+  text-align: left;
+  padding: 0.3em;
+}
+
+.activa {
+  color: #5126be;
+}

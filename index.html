@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .tab {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="activa">Agregar Usuario</a></li>
+      <li><a href="visualizar.html">Visualizar Usuario</a></li>
+    </ul>
+  </nav>
+  <div class="Form">
+    <div class="tabs">
+      <button class="tablink" onclick="openTab(event, 'doctor')" >Doctor</button>
+      <button class="tablink" onclick="openTab(event, 'paciente')" >Paciente</button>
+    </div>
+
+    <!-- Formulario para doctores -->
+    <div id="doctor" class="tab">
+      <h2>Formulario para Doctores</h2>
+      <form id="doctorForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        <label for="cedula">Número de Cédula:</label>
+        <input type="text" id="cedula" name="cedula"><br><br>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        <label for="consultorio">Número de Consultorio:</label>
+        <input type="number" id="consultorio" name="consultorio"><br><br>
+        <label for="especialidad">Tipo de Especialidad:</label>
+        <select id="especialidad" name="especialidad">
+          <option value="Medicina general">Medicina General</option>
+          <option value="Cardiología">Cardiología</option>
+          <option value="Medicina interna">Medicina Interna</option>
+          <option value="Dermatología">Dermatología</option>
+          <option value="Rehabilitación física">Rehabilitación Física</option>
+          <option value="Psicología">Psicología</option>
+          <option value="Odontología">Odontología</option>
+          <option value="Radiología">Radiología</option>
+        </select><br><br>
+        <button type="button" onclick="submitForm('doctor')" class="boton">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Formulario para pacientes -->
+    <div id="paciente" class="tab">
+      <h2>Formulario para Paciente</h2>
+      <form id="pacienteForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        <label for="cedula">Número de Cédula:</label>
+        <input type="text" id="cedula" name="cedula"><br><br>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="number" id="telefono" name="telefono"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1"><br><br>
+        <label for="especialidad">Tipo de Especialidad:</label>
+        <select id="especialidad" name="especialidad">
+          <option value="Medicina general">Medicina General</option>
+          <option value="Cardiología">Cardiología</option>
+          <option value="Medicina interna">Medicina Interna</option>
+          <option value="Dermatología">Dermatología</option>
+          <option value="Rehabilitación física">Rehabilitación Física</option>
+          <option value="Psicología">Psicología</option>
+          <option value="Odontología">Odontología</option>
+          <option value="Radiología">Radiología</option>
+        </select><br><br>
+        <button type="button" onclick="submitForm('paciente')">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script>
+    function openTab(evt, tabName) {
+      const tabs = document.getElementsByClassName('tab');
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+      }
+
+      document.getElementById(tabName).style.display = 'block';
+    }
+    </script> -->
+  </div>
+</body>
+</html>
