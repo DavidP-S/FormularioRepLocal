@@ -64,10 +64,6 @@ app.get('/script.js', (req, res) => {
 app.get('/style.css', (req, res) => {
   res.sendFile(path.join(__dirname, 'style.css'));
 });
-/*app.get('*', (req, res) => {
-  res.send("<h1>Error 404 - Pagina no encontrada</h1>")
-});*/
-
 
 
 app.listen(port, () => {
